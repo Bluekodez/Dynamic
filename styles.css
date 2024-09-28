@@ -1,0 +1,124 @@
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background: linear-gradient(270deg, grey, skyblue, gold);
+}
+
+.flexcontainer:hover{
+    background-image: url(./banner.jpg);
+    background-size: cover;
+    
+}
+.flexcontainer img:hover{
+    transform: scale(1.2)translateX(5px) translateY(-1px);
+}
+
+.eljoe{
+    text-align: center;
+}
+nav a{
+    color: white;
+}
+.contact-form{
+    color: white;
+}
+.button:hover{
+    background-color: blue;
+}
+body{
+    background-image: url(./sounchecklogo.jpg);
+    background-size: cover;
+}
+
+.navs{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1{
+    font-family: Impact;
+    font-size: 80%;
+    font-weight: bolder;
+    color: white;
+}
+p{
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+    color: aliceblue;
+}
+@media(max-width:768px){
+    body{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .flexcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    form{
+        padding: 20px;
+    }
+    input, textarea{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .unnecessary-element{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    body{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img{
+        width: 50%;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width:1025px){
+    body{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .flexcontainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    img{
+        width: 30%;
+        height: auto;
+    }
+    form{
+        padding: 40px;
+    }
+    input, textarea{
+        width: 30%;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+}
